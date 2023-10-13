@@ -291,6 +291,7 @@ columns=fullflexible
 %\IEEEpeerreviewmaketitle
 
 \textbf{12.13.6.18: Question}. If \pr{A|B} $>$ \pr{A}, then which of the following is correct :\\
+
 (A) \pr{B|A} $<$ \pr{B}\\
 (B) \pr{AB} $<$ \pr{A}\pr{B}\\
 (C) \pr{B|A} $>$ \pr{B}\\
@@ -309,7 +310,9 @@ columns=fullflexible
 	\label{eq:1}
 	=\pr{AB} > \pr{A}\pr{B}
 \end{align}
-To find, \pr{B|A}
+
+\begin{enumerate}[label=(\Alph*)]
+    \item To find, \pr{B|A}
 \begin{align}
 	\pr{B|A} = \frac{\pr{AB}}{\pr{A}}
 \end{align}
@@ -321,5 +324,32 @@ Dividing \pr{A} on both sides of \eqref{eq:1}
 	\label{eq:2}
 	=\pr{B|A} > \pr{B}
 \end{align}
-Here, equation \eqref{eq:2} and option (C) are matching so option (C) is the correct answer.
+
+But given \pr{B|A} $<$ \pr{B}\ so option (A) is incorrect
+
+   \item from equation \eqref{eq:1} we have
+\begin{align}
+	=\pr{AB} > \pr{A}\pr{B}
+\end{align}
+Therefore, option (B) is incorrect   
+
+    \item from equation \eqref{eq:2} we have
+\begin{align}
+	=\pr{B|A} > \pr{B}
+\end{align}
+which matches the given option \\
+Therefore, option (C) is correct
+
+    \item from equation \eqref{eq:2} we have
+\begin{align}
+	=\pr{B|A} > \pr{B}
+\end{align}
+
+but given \pr{B|A} = \pr{B}\\
+
+Therefore, option (D) is incorrect
+    
+\end{enumerate}
+
 \end{document}
+
